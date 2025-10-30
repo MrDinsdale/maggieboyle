@@ -1,0 +1,122 @@
+/* ============================
+  CSS Reset
+  ============================ */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+/* ============================
+  Elements
+  ============================ */
+
+body {
+  background-color: #f2f0e4;
+  color: #142424;
+  font-family: "Proza Libre", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  min-height: 100dvh;
+
+  @media screen and (min-width: 960px) {
+    color: #f2f0e4;
+  }
+}
+
+/* ============================
+  UI
+  ============================ */
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+
+  @media screen and (min-width: 960px) {
+    background-color: #142424;
+    flex-direction: row;
+  }
+}
+
+.bg-image {
+  background-color: #142424;
+  height: 400px;
+  object-fit: contain;
+  width: auto;
+
+  @media screen and (min-width: 960px) {
+    height: 100%;
+    object-fit: cover;
+    object-position: right;
+    width: 60%;
+  }
+}
+
+.heading {
+  font-family: "Cormorant", serif;
+  font-optical-sizing: auto;
+  font-weight: 800;
+  font-size: 80px;
+  font-style: normal;
+}
+
+.sub-heading {
+  font-size: 20px;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  justify-content: center;
+  margin: 0 auto;
+  max-width: 560px;
+  padding: 20px;
+
+  @media screen and (min-width: 960px) {
+    margin-left: -10%;
+    width: 50%;
+  }
+}
+
+.content p {
+  max-width: 540px;
+}
